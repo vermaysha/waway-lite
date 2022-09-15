@@ -1,0 +1,41 @@
+{
+  "name": "waway-lite",
+  "version": "1.0.0",
+  "description": "WAWay Lite is express and lite whatsapp gateway",
+  "main": "server.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint --ignore-path .eslintignore --ext .js,.ts .",
+    "format": "prettier --ignore-path .gitignore --write \"**/*.+(js|ts|json)\"",
+    "dev": "ts-node-dev --respawn --transpile-only src/server.ts",
+    "build": "rm -rf ./build && tsc -b",
+    "start": "node server.js",
+    "serve": "npm run dev"
+  },
+  "keywords": [
+    "WAWay",
+    "Whatsapp-Gateway"
+  ],
+  "author": "Ashary Vermaysha",
+  "license": "GPL-3.0",
+  "devDependencies": {
+    "@types/eslint": "^8.4.6",
+    "@types/prettier": "^2.7.0",
+    "@types/qrcode-terminal": "^0.12.0",
+    "@typescript-eslint/eslint-plugin": "^5.37.0",
+    "@typescript-eslint/parser": "^5.37.0",
+    "eslint": "^8.23.1",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-config-standard-with-typescript": "^23.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.2.5",
+    "eslint-plugin-promise": "^6.0.1",
+    "prettier": "^2.7.1",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^4.8.3"
+  },
+  "dependencies": {
+    "@adiwajshing/baileys": "^4.4.0",
+    "qrcode-terminal": "^0.12.0"
+  }
+}
