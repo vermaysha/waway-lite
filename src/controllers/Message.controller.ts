@@ -29,7 +29,7 @@ class MessageController {
     }
 
     try {
-      const status = await Wa.socket?.sendMessage(phone, {
+      await Wa.socket?.sendMessage(phone, {
         text: message,
       })
 
