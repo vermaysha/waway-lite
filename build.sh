@@ -14,4 +14,7 @@ cp package.json build/
 echo "Copying package-lock.json"
 cp package-lock.json build/
 
+echo "Copying .env.example"
+cp .env.example build/
+
 echo "Build complete\nRun the following commands to start the server in production\n\ncd build\nnpm ci --production\nnode server.js\n"
