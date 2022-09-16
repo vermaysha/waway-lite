@@ -4,3 +4,4 @@ node_modules
 session
 store.json
 thunder-tests
+.env
