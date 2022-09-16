@@ -10,5 +10,6 @@ router.use((req, res, next) => {
 
 router.get('/', MessageController.index)
 router.post('/send', MessageController.send)
+router.get('/unsend', MessageController.unsend)
 
 export default router

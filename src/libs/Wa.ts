@@ -78,7 +78,7 @@ class Wa {
           // reconnect if not logged out
           if (shouldReconnect) {
             console.log('you should reconnect')
-            this.connect()
+            return this.connect()
           } else {
             reject(new Error(lastDisconnect?.error?.message))
           }
